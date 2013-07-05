@@ -53,7 +53,7 @@ if(${add_project})
         message(FATAL_ERROR "error: Python is required to build ${PROJECT_NAME}")
       endif()
 
-      set(revision_tag 9c92fd212605bb5ff4d462323763acf65d87e4a7)
+      set(revision_tag 2f3d5ad1f1443a9cd4580a9368c4d74abaadea4c)
       if(${proj}_REVISION_TAG)
         set(revision_tag ${${proj}_REVISION_TAG})
       endif()
@@ -65,7 +65,7 @@ if(${add_project})
         set(location_args GIT_REPOSITORY ${${proj}_GIT_REPOSITORY}
                           GIT_TAG ${revision_tag})
       else()
-        set(location_args GIT_REPOSITORY "${git_protocol}://github.com/commontk/PythonQt.git"
+        set(location_args GIT_REPOSITORY "${git_protocol}://github.com/gcasey/PythonQt.git"
                           GIT_TAG ${revision_tag})
       endif()
 
